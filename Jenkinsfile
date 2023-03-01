@@ -9,11 +9,9 @@ pipeline {
         }
         stage('Building the code') {
             steps {
-                sh 'echo "my first pipeline"'
-                sh '''
-                    echo "By the way, I can do more stuff in here"
-                    ls -ltrh
-                '''
+                retry(3) {
+                    sh 'echo "my first pipeline"'
+                }
             }
         }
        
