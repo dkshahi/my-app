@@ -10,7 +10,7 @@ pipeline {
         stage('Building the code') {
             steps {
                 retry(3) {
-                    sh 'echo "my first pipeline"'
+                    sh 'new.sh'
                 }
             }
         }
