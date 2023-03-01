@@ -12,7 +12,7 @@ pipeline {
                 retry(3) {
                     sh 'ls -la'
                     sh 'pwd'
-                    sh './new.sh'
+                    sh 'bash new.sh'
                 }
             }
         }
