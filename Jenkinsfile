@@ -9,9 +9,6 @@ pipeline {
         }
         stage('Building the code') {
             steps {
-                retry(3) {
-                    sh 'ls -la'
-                    sh 'pwd'
                     sh 'bash new.sh'
                 }
             }
