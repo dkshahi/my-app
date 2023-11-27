@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'NAME', defaultValue: 'Sanjay', description: 'Enter your name')
+        string(name: 'NAME', defaultValue: 'OBI', description: 'Enter your name')
     }
     stages { 
         stage('Guest user'){
